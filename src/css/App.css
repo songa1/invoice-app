@@ -1,0 +1,84 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+:root {
+  --bg: rgba(55, 59, 83, 0.06);
+  --bold-text: #0c0e16;
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: Spartan,Arial,sans-serif;
+}
+
+body {
+  background-color: rgba(55, 59, 83, 0.06);
+}
+
+.invoices {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  padding: 20px 10px;
+}
+
+.card:hover {
+  border: 1px solid #7c5dfa;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+.card p {
+  padding: 0 20px;
+}
+
+.status {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dot {
+  font-size: x-large;
+}
+
+.paid {
+  padding: 10px;
+  background-color: rgba(51,214,159,.06);
+  color: #33d69f;
+}
+
+.draft {
+  padding: 10px;
+  background-color: var(--bg);
+  color: var(--bold-text);
+}
+
+.pending {
+  padding: 10px;
+  background-color: rgba(255,143,0,.06);
+  color: #ff8f00;
+}
