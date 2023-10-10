@@ -7,7 +7,7 @@ export const OneInvoice = ({data}) => {
           <b>#{data.code}</b>
         </p>
         <p>{new Date(data.invoiceDate).toLocaleDateString()}</p>
-        <p>{data.client}</p>
+        <p>{data.client.name}</p>
       </div>
       <div className="right">
         <p>£ {data.price}</p>
